@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SimpleCalculator.br.com.simplecalculator.operators;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,6 +11,10 @@ namespace SimpleCalculator.br.com.simplecalculator.menu
     {
         public static void Main(string[] args)
         {
+            Sum sum = new Sum();
+            Subtraction sub = new Subtraction();
+            Multiplication multi = new Multiplication();
+            Division divi = new Division();
             int op;
             Console.WriteLine("Hello");
             Console.WriteLine("This program is a simple calculator, that can operate with two numbers");
@@ -34,16 +39,24 @@ namespace SimpleCalculator.br.com.simplecalculator.menu
                         Environment.Exit(0);
                         break;
                     case 1:
-                        //sum
+                        sum.SumMenu();
+                        sum.WriteResult();
+                        Environment.Exit(0);
                         break;
                     case 2:
-                        //sub
+                        sub.SubtractionMenu();
+                        sub.WriteResult();
+                        Environment.Exit(0);
                         break;
                     case 3:
-                        //multi
+                        multi.MultiplicationMenu();
+                        multi.WriteResult();
+                        Environment.Exit(0);
                         break;
                     case 4:
-                        //divi
+                        divi.DivisionMenu();
+                        divi.WriteResult();
+                        Environment.Exit(0);
                         break;
                     default:
                         Console.WriteLine("Option not available, try again");
