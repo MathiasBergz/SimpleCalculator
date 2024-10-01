@@ -26,16 +26,26 @@ namespace SimpleCalculator.br.com.simplecalculator.operators
 
         public void SumMenu()
         {
-            Console.Clear();
-            Console.WriteLine("Sum");
-            Console.WriteLine();
-            Console.WriteLine("Type the first number: ");
-            this.number = Console.ReadLine();
-            this.value1 = double.Parse(this.number.Replace(',', '.'));
-            Console.WriteLine("Type the second number: ");
-            this.number = Console.ReadLine();
-            this.value2 = double.Parse(this.number.Replace(',', '.'));
-            this.resultDouble = this.value1 + this.value2;
+            try
+            {
+                Console.WriteLine("Sum");
+                Console.WriteLine();
+                Console.WriteLine("Type the first number: ");
+                this.number = Console.ReadLine();
+                this.value1 = double.Parse(this.number.Replace(',', '.'));
+                Console.WriteLine("Type the second number: ");
+                this.number = Console.ReadLine();
+                this.value2 = double.Parse(this.number.Replace(',', '.'));
+                this.resultDouble = this.value1 + this.value2;
+            }
+            catch (FormatException fe)
+            {
+                Console.WriteLine($"Type only numbers. Error: {fe.Message}");
+                Console.WriteLine("Press enter to continue");
+                Console.ReadLine();
+                Console.Clear();
+                this.SumMenu();
+            }
         }
 
         public void WriteResult()
