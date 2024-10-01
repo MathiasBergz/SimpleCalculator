@@ -20,6 +20,10 @@ The project adopts a simple console interface where the user is prompted to ente
 
 This development process using multiple branches ensured better code organization, allowing functionalities to be developed and tested independently, making it easier to detect and fix potential issues before integration into the final product.
 
+# Exception Handling
+
+If the user accidentally types a letter or any other non-numeric character when asked to enter a number, the program catches the error and displays a friendly error message, prompting the user to enter valid numbers. This makes the calculator more user-friendly and robust.
+
 # License
 
 This project is licensed under the MIT License. This means you are free to use, modify, and distribute the software as long as you include the original copyright notice and the license terms. The software is provided "as is", without any warranty, ensuring that the developer is not responsible for any issues that arise from the use of the software.
