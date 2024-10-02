@@ -52,7 +52,7 @@ namespace SimpleCalculator.br.com.simplecalculator.operators
         public void WriteResult()
         {
             if (IsInt(this.resultDouble)) Console.WriteLine($"{this.value1} - {this.value2} = {this.resultInt}");
-            else Console.WriteLine($"{this.value1} - {this.value2} = {this.resultDouble}");
+            else Console.WriteLine($"{this.value1} - {this.value2} = {this.resultDouble:0.#####}");
         }
 
     }
