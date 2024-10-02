@@ -13,7 +13,7 @@ The branch structure was organized as follows:
    - feature/subtraction
    - feature/multiplication
    - feature/division
-   - 
+   
 Each of these branches contains the specific implementation of its respective mathematical operation. Once development was completed and unit tests were performed in each branch, the code was merged into the develop branch for integration, and later into the master after final validation.
 
 The project adopts a simple console interface where the user is prompted to enter the operation they want to perform by typing a corresponding number or symbol. For example, the user can type 1 for sum, 2 for subtraction, 3 for multiplication, or 4 for division. Once the operation is selected, the user is asked to input two numbers on which the operation will be performed, and the result is displayed.
@@ -23,6 +23,24 @@ This development process using multiple branches ensured better code organizatio
 # Exception Handling
 
 In addition to handling division by zero, the project includes exception handling for invalid inputs. If the user accidentally types a letter or any other non-numeric character when asked to enter a number, the program catches the error and displays a friendly error message, prompting the user to enter valid numbers. This makes the calculator more user-friendly and robust. 
+
+# How to Compile the Program
+
+1. Download the Project: First, download the project files from the provided repository or as a zip file.
+
+2. Extract the Files: If you downloaded the project as a zip file, extract the contents to a folder on your computer.
+
+3. Open in an IDE: Open the folder in an Integrated Development Environment (IDE) that supports C#, such as Visual Studio or Visual Studio Code with the necessary C# extensions installed.
+
+4. Build the Solution:
+
+   - In Visual Studio, open the .sln (solution) file and navigate to the "Build" menu. Select "Build Solution" or press Ctrl + Shift + B.
+   - In Visual Studio Code, open the folder and make sure you have the C# extension installed. Then, navigate to the terminal, and run the command dotnet build to compile the project.
+   - 
+5. Run the Program: After successfully building the program, you can run it using:
+
+   - Visual Studio: Press F5 or click on "Start" to run the program.
+   - Visual Studio Code: Use the command dotnet run in the terminal.
 
 # License
 
