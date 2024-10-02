@@ -16,7 +16,13 @@ The branch structure was organized as follows:
    
 Each of these branches contains the specific implementation of its respective mathematical operation. Once development was completed and unit tests were performed in each branch, the code was merged into the develop branch for integration, and later into the master after final validation.
 
-The project adopts a simple console interface where the user is prompted to enter the operation they want to perform by typing a corresponding number or symbol. For example, the user can type 1 for sum, 2 for subtraction, 3 for multiplication, or 4 for division. Once the operation is selected, the user is asked to input two numbers on which the operation will be performed, and the result is displayed.
+# Rounding Feature
+
+In addition to the basic operations, the calculator now includes a feature to round the results to 5 decimal places. This was implemented to ensure precision and avoid displaying excessive decimal numbers caused by floating-point memory behavior. By limiting the output to 5 decimal places, the calculator provides more concise and readable results for the user.
+
+# User Interface
+
+The project adopts a simple console interface where the user is prompted to enter the operation they want to perform by typing a corresponding number or symbol. For example, the user can type 1 for sum, 2 for subtraction, 3 for multiplication, or 4 for division. Once the operation is selected, the user is asked to input two numbers on which the operation will be performed, and the result, rounded to 5 decimal places, is displayed.
 
 This development process using multiple branches ensured better code organization, allowing functionalities to be developed and tested independently, making it easier to detect and fix potential issues before integration into the final product.
 
