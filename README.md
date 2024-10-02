@@ -42,7 +42,7 @@ In addition to handling division by zero, the project includes exception handlin
 
    - In Visual Studio, open the .sln (solution) file and navigate to the "Build" menu. Select "Build Solution" or press Ctrl + Shift + B.
    - In Visual Studio Code, open the folder and make sure you have the C# extension installed. Then, navigate to the terminal, and run the command dotnet build to compile the project.
-   - 
+   
 5. Run the Program: After successfully building the program, you can run it using:
 
    - Visual Studio: Press F5 or click on "Start" to run the program.
