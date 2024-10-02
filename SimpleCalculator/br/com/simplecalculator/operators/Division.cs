@@ -45,6 +45,13 @@ namespace SimpleCalculator.br.com.simplecalculator.operators
                 Console.ReadLine();
                 this.DivisionMenu();
             }
+            catch (DivideByZeroException dbz)
+            {
+                Console.WriteLine($"Division by 0. Error: {dbz.Message}");
+                Console.WriteLine("Press enter to continue");
+                Console.ReadLine();
+                Environment.Exit(0);
+            } 
         }
 
         public void WriteResult()
