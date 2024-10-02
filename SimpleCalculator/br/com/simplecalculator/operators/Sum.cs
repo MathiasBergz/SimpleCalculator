@@ -50,8 +50,8 @@ namespace SimpleCalculator.br.com.simplecalculator.operators
 
         public void WriteResult()
         {
-            if (IsInt(this.resultDouble)) Console.WriteLine($"The sum of the numbers {this.value1} and {this.value2} is equals to {this.resultInt}");
-            else Console.WriteLine($"The sum of the numbers {this.value1} and {this.value2} is equals to {this.resultDouble}");
+            if (IsInt(this.resultDouble)) Console.WriteLine($"{this.value1} + {this.value2} = {this.resultInt}");
+            else Console.WriteLine($"{this.value1} + {this.value2} = {this.resultDouble:0.#####}");
         }
 
     }
