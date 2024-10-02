@@ -24,7 +24,7 @@ This development process using multiple branches ensured better code organizatio
 
 In addition to handling division by zero, the project includes exception handling for invalid inputs. If the user accidentally types a letter or any other non-numeric character when asked to enter a number, the program catches the error and displays a friendly error message, prompting the user to enter valid numbers. This makes the calculator more user-friendly and robust. 
 
-# How to Run the Program
+# How to Execute the Program
 
 1. Download the Project: First, download the project files from the provided repository or as a zip file.
 
